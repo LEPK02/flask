@@ -1,0 +1,49 @@
+summary: User login
+description: Endpoint to log in a user with username and password.
+parameters:
+  - in: body
+    name: body
+    description: User object containing login credentials
+    required: true
+    schema:
+      $ref: '#/definitions/Login'
+definitions:
+  Login:
+    type: object
+    properties:
+      username:
+        type: string
+        description: The username of the user
+      password:
+        type: string
+        description: The password of the user
+responses:
+  200:
+    description: "Login successful"
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          description: "Successful login message"
+    examples:
+      application/json:
+        message: "Logged in successfully"
+  400:
+    description: "Invalid query"
+  401:
+    description: "Authentication failed"
+  403:
+    description: "Unauthorised"
+  409:
+    description: "Value already exists"
+  422:
+    description: "Invalid input"
+  500:
+    description: "Internal server error"
+  502:
+    description: "Database network timeout"
+  503:
+    description: "Failed to connect to database"
+tags:
+  - User

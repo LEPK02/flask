@@ -1,0 +1,60 @@
+summary: Register a new user
+description: Endpoint to register a new user in the system.
+parameters:
+  - in: body
+    name: body
+    description: User object that needs to be registered
+    required: true
+    schema:
+      $ref: '#/definitions/User'
+definitions:
+  User:
+    type: object
+    properties:
+      _id:
+        type: string
+        description: DB UUID
+      name:
+        type: string
+        description: Full name of the user
+      username:
+        type: string
+        description: Unique username of the user
+      password:
+        type: string
+        description: User's password
+      role:
+        type: string
+        description: Role of the user
+        enum:
+          - Junior
+          - Senior
+        default: Junior
+        x-nullable: true
+responses:
+  200:
+    description: "User registered successfully"
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+    examples:
+      application/json:
+        message: "User registered successfully"
+  400:
+    description: "Invalid query"
+  401:
+    description: "Authentication failed"
+  403:
+    description: "Unauthorised"
+  409:
+    description: "Value already exists"
+  500:
+    description: "Internal server error"
+  502:
+    description: "Database network timeout"
+  503:
+    description: "Failed to connect to database"
+tags:
+  - User

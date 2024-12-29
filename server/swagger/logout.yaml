@@ -1,0 +1,27 @@
+summary: Logout user
+description: Endpoint to log out the user from the system.
+parameters: []
+responses:
+  200:
+    description: "User successfully logged out"
+    examples:
+      application/json:
+        message: "Successfully logged out."
+  400:
+    description: "Invalid query"
+  401:
+    description: "Authentication failed"
+  403:
+    description: "Unauthorized"
+  409:
+    description: "Value already exists"
+  422:
+    description: "Validation failed"
+  500:
+    description: "Internal server error"
+  502:
+    description: "Database network timeout"
+  503:
+    description: "Failed to connect to database"
+tags:
+  - User

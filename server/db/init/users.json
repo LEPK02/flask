@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Dr. Joel Tan",
+    "username": "joel87",
+    "password": "pwjoel87",
+    "role": "Senior"
+  },
+  {
+    "name": "Dr. Huang Shimin",
+    "username": "shiminh",
+    "password": "pwshiminh",
+    "role": "Junior"
+  },
+  {
+    "name": "Dr. Rishi Agarwal",
+    "username": "rishiaw",
+    "password": "pwrishiaw",
+    "role": "Junior"
+  }
+]

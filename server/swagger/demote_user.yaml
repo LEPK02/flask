@@ -1,0 +1,46 @@
+summary: Demote user from senior to junior
+description: Endpoint to demote a user from senior to junior based on the provided credentials.
+parameters:
+  - in: body
+    name: body
+    description: Object containing user credentials for promotion.
+    required: true
+    schema:
+      $ref: '#/definitions/PromotionRequest'
+definitions:
+  PromotionRequest:
+    type: object
+    properties:
+      username:
+        type: string
+        description: Username of the user to be promoted.
+      password:
+        type: string
+        description: Password of the user for authentication.
+responses:
+  200:
+    description: "User successfully promoted to senior."
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "User successfully promoted to senior."
+  400:
+    description: "Invalid query"
+  401:
+    description: "Authentication failed"
+  403:
+    description: "Unauthorized access"
+  409:
+    description: "Value already exists"
+  422:
+    description: "Validation error"
+  500:
+    description: "Internal server error"
+  502:
+    description: "Database network timeout"
+  503:
+    description: "Failed to connect to database"
+tags:
+  - User
