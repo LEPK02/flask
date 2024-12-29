@@ -1,5 +1,15 @@
-<!-- START doctoc -->
-<!-- END doctoc -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [Task](#task)
+- [Installation for Local Development](#installation-for-local-development)
+  - [Server](#server)
+    - [Virtual Environment](#virtual-environment)
+- [Usage](#usage)
+- [TODO](#todo)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 # Task
 The API backend will be used by a certain mental health institute for clinicians to manage therapy client cases within the institute. Assume that the frontend for the application has already been built.
 
