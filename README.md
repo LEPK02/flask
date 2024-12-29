@@ -15,9 +15,9 @@ pipenv shell
 ```
 pipenv run python app.py
 ```
-# Deployment
-- Deploy on [pythonanywhere](https://www.pythonanywhere.com/)
-
+# Usage
+- Deployed at https://flask-x9e4.onrender.com
+- View Swagger docs at https://flask-x9e4.onrender.com/apidocs/
 # TODO
 - MongoDB sessions
 - Flask rate limiting
