@@ -11,6 +11,7 @@ flasgger = "*"
 pymongo = "*"
 flask-login = "*"
 bcrypt = "*"
+python-dotenv = "*"
 
 [dev-packages]
 
