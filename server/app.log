@@ -1,0 +1,14 @@
+2024-12-30 00:37:29 INFO Connected to client
+2024-12-30 00:37:32 INFO Initialized 'roles' table
+2024-12-30 00:37:34 WARNING Failed to load row into users
+	E11000 duplicate key error collection: genvoice_db.users index: username_1 dup key: { username: "joel87" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: genvoice_db.users index: username_1 dup key: { username: "joel87" }', 'keyPattern': {'username': 1}, 'keyValue': {'username': 'joel87'}}
+	{"name": "Dr. Joel Tan", "username": "joel87", "password": "JDJiJDEyJE5YaFVVWVZERlVqcTVLL0EyeXk2WS5PaXI3TmYzZkdrdTBlZEJUdDhDMGlBQXBuL3dNY1hx", "role": "Senior"}
+2024-12-30 00:37:34 WARNING Failed to load row into users
+	E11000 duplicate key error collection: genvoice_db.users index: username_1 dup key: { username: "shiminh" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: genvoice_db.users index: username_1 dup key: { username: "shiminh" }', 'keyPattern': {'username': 1}, 'keyValue': {'username': 'shiminh'}}
+	{"name": "Dr. Huang Shimin", "username": "shiminh", "password": "JDJiJDEyJHNPY0ozY2UyajhIbW8yTWxwZGhwVmVOYWhpYzBUQ25RM1pwMkM4Rzd2MmtpWFNzYnFSSjJp", "role": "Junior"}
+2024-12-30 00:37:34 WARNING Failed to load row into users
+	E11000 duplicate key error collection: genvoice_db.users index: username_1 dup key: { username: "rishiaw" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: genvoice_db.users index: username_1 dup key: { username: "rishiaw" }', 'keyPattern': {'username': 1}, 'keyValue': {'username': 'rishiaw'}}
+	{"name": "Dr. Rishi Agarwal", "username": "rishiaw", "password": "JDJiJDEyJEZZVk0wdzFWUTM3UC9CTFZPajM2NS43bTVycGozcFJOLlh0Ti92TEp4b09yZG8uN0FlSVVD", "role": "Junior"}
+2024-12-30 00:37:34 INFO Initialized 'users' table
+2024-12-30 00:37:35 INFO Initialized 'cases' table
+2024-12-30 00:37:36 WARNING sys.meta_path is None, Python is likely shutting down
